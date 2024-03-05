@@ -7,5 +7,5 @@
 
 # 中英文对照目录
 
-1. class_encapsulation = 类的封装
+1. classencapsulation = class_encapsulation = 类的封装
 2. subclass = 子类
