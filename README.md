@@ -3,7 +3,7 @@
 
 # 学的课程
 
-学习的是 B 站的公开课程：[https://www.bilibili.com/video/BV1uJ411k7wy](https://www.bilibili.com/video/BV1uJ411k7wy).
+学习的是 B 站的公开课程：[https://www.bilibili.com/video/BV1uJ411k7wy]().
 
 # 注意事项
 
