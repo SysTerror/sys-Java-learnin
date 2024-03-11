@@ -3,8 +3,6 @@ package cn.sysror.Demo169HongBao;
 import java.util.ArrayList;
 
 public class Manager extends User {
-    String name = "群主";
-
     public Manager() {
     }
 
@@ -32,9 +30,5 @@ public class Manager extends User {
         redList.add(avg + mod); // 把 除不开的零头 包在 最后一个红包里
 
         return redList;
-    }
-
-    public void showMoney() {
-        super.showMoney(name);
     }
 }

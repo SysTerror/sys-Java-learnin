@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Member extends User {
-    String name = "群员";
-
     public Member() {
     }
 
@@ -19,9 +17,7 @@ public class Member extends User {
             // delta 变动的金额
         int left = this.getMoney();
         super.setMoney(left + delta); // 给钱，重设余额
-    }
 
-    public void showMoney() {
-        super.showMoney(name);
+        System.out.println("【" + getName() + "】我收到一个 " + delta + " 块钱的红包。");
     }
 }

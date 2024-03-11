@@ -12,7 +12,7 @@ public class User {
         this.money = money;
     }
 
-    public void showMoney(String name) {   
+    public void showMoney() {   
         System.out.println("【" + name + "】我有 " + money + " 块钱。");
     }
 
