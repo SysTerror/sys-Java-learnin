@@ -2,7 +2,7 @@ package cn.sysror.Demo169HongBao;
 
 import java.util.ArrayList;
 
-class Demo169HongBao {
+public class Demo169HongBao {
     public static void main(String[] args) {
         Manager mng = new Manager("12dora", 100000);
         Member mb1 = new Member("A_Pi", 10000);
