@@ -1,4 +1,4 @@
-package cn.sysror.Demo169HongBao;
+package cn.sysror.Demo169RedPacket;
 
 public class User {
     private String name;

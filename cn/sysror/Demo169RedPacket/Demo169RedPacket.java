@@ -1,8 +1,8 @@
-package cn.sysror.Demo169HongBao;
+package cn.sysror.Demo169RedPacket;
 
 import java.util.ArrayList;
 
-public class Demo169HongBao {
+public class Demo169RedPacket {
     public static void main(String[] args) {
         Manager mng = new Manager("12dora", 100000);
         Member mb1 = new Member("A_Pi", 10000);
