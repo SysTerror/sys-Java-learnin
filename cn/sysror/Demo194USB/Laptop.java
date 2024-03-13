@@ -10,12 +10,12 @@ public class Laptop {
     }
 
     public void useDevice(USB usbDevice) {
-        usbDevice.open();
+        usbDevice.openDevice();
         if (usbDevice instanceof Mouse) { // 检查 USB 设备类型
             ((Mouse)usbDevice).click(); // 根据设备类型执行相应方法
         } else if (usbDevice instanceof Keyboard) {
             ((Keyboard)usbDevice).type();
         }
-        usbDevice.close();
+        usbDevice.closeDevice();
     }
 }
