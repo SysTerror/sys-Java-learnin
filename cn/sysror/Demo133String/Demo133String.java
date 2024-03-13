@@ -2,7 +2,7 @@ package cn.sysror.Demo133String;
 
 public class Demo133String {
 	public static void main(String[] args) {
-		String strEmpty = new String(); // 引入一个空字符串
+		String strEmpty = ""; // 引入一个空字符串
 		System.out.println(strEmpty);
 		
 		char[] charArray = {'A', '_', 'P', 'i'};
