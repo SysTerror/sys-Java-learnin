@@ -14,20 +14,20 @@ public class Game {
         this.year = year;
     }
 
-//    @Override
-//    public boolean equals(Object obj) { // 覆写父类 Objects 的 equals 方法
-//        // 【特例】
-//        if (obj == this) return true; // 【增效】与本身比较，返回 true
-//        if (obj == null) return false; //【增效】传入空指针，返回 false
-//        if (!(obj instanceof Game)) return false;
-//            // 本非 Person 类对象，则返回 false
-//            // * 防止 ClassCastException (类型转换异常)
-//
-//        // 【惯例】
-//        Game game = (Game) obj; // 强制向下转型
-//        return this.title.equals(game.title) && this.year == game.year;
-//            // 这里的 equals 方法属于 String 类，不是同一个
-//    }
+/*    @Override
+    public boolean equals(Object obj) { // 覆写父类 Object 的 equals 方法
+        // 【特例】
+        if (obj == this) return true; // 【增效】与本身比较，返回 true
+        if (obj == null) return false; //【增效】传入空指针，返回 false
+        if (!(obj instanceof Game)) return false;
+            // 本非 Person 类对象，则返回 false
+            // 防止 ClassCastException (类型转换异常)
+
+        // 【惯例】
+        Game game = (Game) obj; // 强制向下转型
+        return this.title.equals(game.title) && this.year == game.year;
+            // 这里的 equals 方法属于 String 类，不是同一个
+    }*/
 
     @Override
     public boolean equals(Object o) {
@@ -35,11 +35,7 @@ public class Game {
         if (o == null || getClass() != o.getClass()) return false;
         Game game = (Game) o;
         return year == game.year && Objects.equals(title, game.title);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(title, year);
+            // Objects 类的静态方法 equals，可防止 NullPointerException (空指针异常)
     }
 
     public String getTitle() {
